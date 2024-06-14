@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
+const nextConfig = {
     typescript: {
       // !! WARN !!
       // Dangerously allow production builds to successfully complete even if
@@ -9,4 +7,6 @@ module.exports = {
       // !! WARN !!
       ignoreBuildErrors: true,
     },
-  }
+};
+
+export default nextConfig;
