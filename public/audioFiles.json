@@ -1,0 +1,5 @@
+[
+    { "id": 1, "title": "Sample 1", "url": "/bananabread.mp3" },
+    { "id": 2, "title": "Sample 2", "url": "/audio/sample2.mp3" },
+    { "id": 3, "title": "Sample 3", "url": "/audio/sample3.mp3" }
+]
