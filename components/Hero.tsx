@@ -46,6 +46,7 @@ const IntroSection = () => {
           maxW="800px"
           opacity="0"
           justifyContent="center"
+          alignItems="flex-start"
           direction="column"
           initial={{
             opacity: 0,

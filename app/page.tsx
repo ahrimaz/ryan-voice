@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 function Home() {
   return (
-    <Box display="flex" flexDirection="column" minH="100vh" alignItems="stretch">
+    <Box display="flex" flexDirection="column" minH="100vh">
       <WithSubnavigation/>
         <IntroSection>
           <Button colorScheme="teal">Click me</Button>

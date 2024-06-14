@@ -30,12 +30,12 @@ const Footer = () => {
       marginInline="auto"
       p={8}
       spacing={{ base: 8, md: 0 }}
-      justifyContent="space-between"
+      justifyContent="center"
       alignItems="center"
       direction={{ base: 'column', md: 'row' }}
       height="100%"
     >
-      <Text>Logo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Text>
+      <Text marginRight={8}>Logo</Text>
 
       {/* desktop */}
       <HStack spacing={8} alignItems="center" d={{ base: 'none', md: 'flex' }} marginRight={8}>
@@ -44,7 +44,7 @@ const Footer = () => {
         ))}
       </HStack>
 
-      <Stack direction="row" spacing={8} pt={{ base: 4, md: 0 }} alignItems="center">
+      <Stack direction="row" spacing={4} pt={{ base: 4, md: 0 }} alignItems="center" justifyContent="center">
         {accounts.map((sc, index) => (
           <IconButton
             key={index}
