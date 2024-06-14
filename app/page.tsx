@@ -4,6 +4,7 @@ import WithSubnavigation from "@/components/Navbar";
 import IntroSection from "@/components/Hero";
 import AudioGallery from "@/components/AudioGallery";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         </IntroSection>
         <AudioGallery/>
         <Box flex="1"/>
+        <Contact/>
         <Footer/>
     </Box>
   );
