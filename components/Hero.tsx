@@ -72,9 +72,12 @@ const IntroSection = () => {
             <Box as="strong" fontWeight="600">
               Bond.
             </Box>{' '}
-            James Bond. I'm an{' '}
+            James {' '}
+            <Box as="strong" fontWeight={600}>
+            Bond.{' '}
+            </Box>
             <Box as="span" whiteSpace="nowrap">
-              aspiring voice actor and
+              I'm an aspiring voice actor and
             </Box>{' '}
             <Box as="span" whiteSpace="nowrap">
               secret agent&nbsp;
