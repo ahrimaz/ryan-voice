@@ -93,7 +93,7 @@ const AudioGallery = () => {
           ref={ref}
           as="section"
           p={8}
-          bg="gray.100"
+          bg="white"
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
@@ -105,7 +105,7 @@ const AudioGallery = () => {
           )}
           <VStack spacing={4} align="center">
             {audioFiles.map((audio: AudioFile) => (
-              <Box key={audio.id} p={4} bg="white" borderRadius="md" boxShadow="md" width="80%" maxW="500px">
+              <Box key={audio.id} p={4} bg="white" borderWidth={2} borderRadius="md" boxShadow="md" width="80%" maxW="500px">
                 <HStack justifyContent="space-between" alignItems="center">
                   <Text>{audio.title}</Text>
                   {currentAudio && currentAudio.url === audio.url && (

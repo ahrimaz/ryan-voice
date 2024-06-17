@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 import WithSubnavigation from "@/components/Navbar";
 import IntroSection from "@/components/Hero";
 import AudioGallery from "@/components/AudioGallery";
