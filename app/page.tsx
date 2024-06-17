@@ -10,7 +10,7 @@ function Home() {
     <Box display="flex" flexDirection="column" minH="100vh">
       <WithSubnavigation/>
         <IntroSection/>
-        <AudioGallery/>
+        <AudioGallery jsonFile="/audioFiles.json"/>
         <Box flex="1"/>
         <Contact/>
         <Footer/>

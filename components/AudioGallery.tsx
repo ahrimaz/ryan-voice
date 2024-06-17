@@ -16,7 +16,11 @@ interface AudioFile {
 const MotionBox = motion(Box);
 const MotionButton = motion(Button);
 
-const AudioGallery = () => {
+interface AudioGalleryProps {
+  jsonFile: string;
+}
+
+const AudioGallery: React.FC<AudioGalleryProps> = ({ jsonFile }) => {
   const [audioFiles, setAudioFiles] = useState<AudioFile[]>([]);
   const [currentAudio, setCurrentAudio] = useState<AudioFile | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -25,13 +29,13 @@ const AudioGallery = () => {
 
   useEffect(() => {
     const fetchAudioFiles = async () => {
-      const response = await fetch('/audioFiles.json');
+      const response = await fetch(jsonFile);
       const data = await response.json();
       setAudioFiles(data);
     };
 
     fetchAudioFiles();
-  }, []);
+  }, [jsonFile]);
 
   const updateProgress = () => {
     if (audioRef.current) {
