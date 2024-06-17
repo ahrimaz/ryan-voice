@@ -10,9 +10,7 @@ function Home() {
   return (
     <Box display="flex" flexDirection="column" minH="100vh">
       <WithSubnavigation/>
-        <IntroSection>
-          <Button colorScheme="teal">Click me</Button>
-        </IntroSection>
+        <IntroSection/>
         <AudioGallery/>
         <Box flex="1"/>
         <Contact/>

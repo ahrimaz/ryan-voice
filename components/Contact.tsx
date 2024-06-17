@@ -17,7 +17,7 @@ const Contact = () => {
           {({ inView, ref }) => (
             <MotionBox
               ref={ref}
-              bg="gray.100"
+              bg="white"
               p={5}
               borderRadius="md"
               shadow="md"
