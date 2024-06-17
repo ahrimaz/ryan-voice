@@ -109,7 +109,7 @@ const AudioGallery = () => {
                 <HStack justifyContent="space-between" alignItems="center">
                   <Text>{audio.title}</Text>
                   {currentAudio && currentAudio.url === audio.url && (
-                    <Progress value={progress} size="sm" colorScheme="blue" width="100%" maxW="200px" />
+                    <Progress value={progress} size="sm" colorScheme="blue" width="100%" maxW="300px" />
                   )}
                   <MotionButton onClick={() => handlePlayPause(audio)} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                     {currentAudio && currentAudio.url === audio.url && isPlaying ? <FaPause /> : <FaPlay />}
